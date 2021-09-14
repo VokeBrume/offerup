@@ -6,5 +6,6 @@ import { Component } from "@angular/core";
 })
 
 export class TopNavBarComponent {
-
+    logo = "assets/logo.png"
+    location = "Morgantown: 30 miles + Shipping"
 }

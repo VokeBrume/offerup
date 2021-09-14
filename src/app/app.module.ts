@@ -6,6 +6,7 @@ import { BottomNavBarComponent } from './footer/bottom-nav-bar.components';
 import { SecondBottomNavBarComponent } from './footer/second-bottom-nav-bar.component';
 import { SecondNavBarComponent } from './header/second-nav-bar.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
+import { LayoutMainComponent } from './layout/layout-main.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TopNavBarComponent } from './header/top-nav-bar.component';
     TopNavBarComponent,
     SecondNavBarComponent,
     BottomNavBarComponent,
-    SecondBottomNavBarComponent
+    SecondBottomNavBarComponent,
+    LayoutMainComponent
   ],
   imports: [
     BrowserModule

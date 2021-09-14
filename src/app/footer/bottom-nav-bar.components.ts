@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
 })
 
 export class BottomNavBarComponent {
-
+    page_end = "View more"
 }

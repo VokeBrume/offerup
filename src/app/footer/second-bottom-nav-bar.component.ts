@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
 })
 
 export class SecondBottomNavBarComponent {
-
+    copyright = "© 2021 OfferUp Inc."
 }
