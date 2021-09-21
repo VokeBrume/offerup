@@ -8,6 +8,10 @@ import { SecondNavBarComponent } from './header/second-nav-bar.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { LayoutFooterComponent } from './layout/layout-footer.component';
 import { LayoutHeaderComponent } from './layout/layout-header.component';
+import { TermsOfServiceComponent } from './body/terms-of-service/terms-of-service.component';
+import { PrivacyComponent } from './body/privacy/privacy.component';
+import { HomeComponent } from './body/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +21,14 @@ import { LayoutHeaderComponent } from './layout/layout-header.component';
     BottomNavBarComponent,
     SecondBottomNavBarComponent,
     LayoutHeaderComponent,
-    LayoutFooterComponent
+    LayoutFooterComponent,
+    TermsOfServiceComponent,
+    PrivacyComponent,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
