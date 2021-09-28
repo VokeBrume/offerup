@@ -12,6 +12,7 @@ import { TermsOfServiceComponent } from './body/terms-of-service/terms-of-servic
 import { PrivacyComponent } from './body/privacy/privacy.component';
 import { HomeComponent } from './body/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MerchCardComponent } from './body/merch-card/merch-card.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
     TermsOfServiceComponent,
     PrivacyComponent,
     HomeComponent,
+    MerchCardComponent
   ],
   imports: [
     BrowserModule,
