@@ -1,36 +1,9 @@
 <div class="m-2">
     <div class="container-fluid">
         <div class="d-flex flex-row">
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-        </div>
-        <div class="d-flex flex-row">
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-        </div>
-        <div class="d-flex flex-row">
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-        </div>
-        <div class="d-flex flex-row">
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
-            <offerup-merch-card>loading card</offerup-merch-card>
+            <div *ngFor = "let merch of merchcards">
+                <offerup-merch-card title={{merch.title}} cost={{merch.cost}} locator={{merch.locator}} imgPath={{merch.imgPath}}>loading card</offerup-merch-card>
+            </div>
         </div>
     </div>
 </div>
