@@ -13,6 +13,8 @@ import { PrivacyComponent } from './body/privacy/privacy.component';
 import { HomeComponent } from './body/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MerchCardComponent } from './body/merch-card/merch-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { MerchCardComponent } from './body/merch-card/merch-card.component';
     TermsOfServiceComponent,
     PrivacyComponent,
     HomeComponent,
-    MerchCardComponent
+    MerchCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
