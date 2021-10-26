@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MerchCardComponent } from './body/merch-card/merch-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { MerchInfoComponent } from './body/home/merch-info.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { UserInfoComponent } from './header/user-info.component';
     PrivacyComponent,
     HomeComponent,
     MerchCardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    MerchInfoComponent
   ],
   imports: [
     BrowserModule,
