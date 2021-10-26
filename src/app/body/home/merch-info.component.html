@@ -3,7 +3,10 @@
     <div class="m-2">
         <div class="container-fluid">
             <div class="d-flex flex-row">
-                <div>
+                <div *ngFor = "let merch of merchcards">
+                    <offerup-merch-card title={{merch.title}} cost={{merch.cost}} locator={{merch.locator}} imgPath={{merch.imgPath}}>loading card</offerup-merch-card>
+                </div>
+                <!-- <div>
                     <offerup-merch-card title={{merchList.merch1.title}} cost={{merchList.merch1.cost}}
                         locator={{merchList.merch1.locator}} imgPath={{merchList.merch1.imgPath}}>loading card
                     </offerup-merch-card>
@@ -37,7 +40,7 @@
                     <offerup-merch-card title={{merchList.merch7.title}} cost={{merchList.merch7.cost}}
                         locator={{merchList.merch7.locator}} imgPath={{merchList.merch7.imgPath}}>loading card
                     </offerup-merch-card>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

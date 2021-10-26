@@ -3,12 +3,16 @@ import { Injectable } from "@angular/core";
 import { MerchInfo } from "./merch-info.model";
 
 @Injectable({providedIn: 'root'})
-export class UserInfoService {
-    url: string = "https://offerup-app-b0852-default-rtdb.firebaseio.com/merch-list.json";
+export class MerchInfoService {
+    private baseUrl: string = "https://offerup-app-b0852-default-rtdb.firebaseio.com/";
+    private mergelistEndpoint: string = 'merch-list.json';
+
+
     constructor(private http:HttpClient) {
        
     }
-    getUserInfo() {
-            return this.http.get<MerchInfo>(this.url);
+    getMerchInfo() {
+        console.log(this.baseUrl + this.mergelistEndpoint);
+            return this.http.get<MerchInfo []>(this.baseUrl + this.mergelistEndpoint);
     }
 }
