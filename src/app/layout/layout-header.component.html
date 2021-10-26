@@ -1,11 +1,14 @@
 <offerup-user-info> Loading user info </offerup-user-info>
+
 <div class="component">
     <div class="col ps-4">
         <app-top-nav-bar></app-top-nav-bar>
     </div>
     <div class="col ps-3">
         <app-second-nav-bar></app-second-nav-bar>
-        <router-outlet></router-outlet>
-        <offerup-merch-info> Loading merch info </offerup-merch-info>
+        <div class="d-flex justify-content-center mb-5">
+            <router-outlet></router-outlet>
+        </div>
+
     </div>
 </div>

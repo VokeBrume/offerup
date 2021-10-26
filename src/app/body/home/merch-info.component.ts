@@ -20,6 +20,9 @@ export class MerchInfoComponent implements OnInit {
     ngOnInit(): void {
         console.log("Registering showMerchInfo as a subscriber");
         this.showMerchInfo();
+        this.merchInfoService.modifyMerchInfo().subscribe(data => {
+            console.log(data);
+        })
     }
 
     showMerchInfo() {
