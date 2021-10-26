@@ -16,6 +16,8 @@ import { MerchCardComponent } from './body/merch-card/merch-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
 import { MerchInfoComponent } from './body/home/merch-info.component';
+import { EditMerchInfoComponent } from './body/home/edit-merch-info.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { MerchInfoComponent } from './body/home/merch-info.component';
     HomeComponent,
     MerchCardComponent,
     UserInfoComponent,
-    MerchInfoComponent
+    MerchInfoComponent,
+    EditMerchInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

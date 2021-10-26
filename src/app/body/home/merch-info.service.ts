@@ -9,52 +9,15 @@ export class MerchInfoService {
 
 
     constructor(private http: HttpClient) {
-
     }
+
     getMerchInfo() {
         console.log(this.baseUrl + this.mergelistEndpoint);
-        return this.http.get<MerchInfo[]>(this.baseUrl + this.mergelistEndpoint);
+        return this.http.get<MerchInfo>(this.baseUrl + this.mergelistEndpoint);
     }
-    modifyMerchInfo() {
-        var temp: MerchInfo []= [
-            {
-                title: "Tesla Model3",
-                cost: "$75000",
-                locator: "Philadelphia, PA",
-                imgPath: "./assets/car.jpg"
-            },
-            {
-                title: "Hyundai Sonata",
-                cost: "$1200000",
-                locator: "Ibadan, Oyo",
-                imgPath: "./assets/car.jpg"
-            },
-            {
-                title: "Mercedes E-Class",
-                cost: "$42000",
-                locator: "Summerville, WV",
-                imgPath: "./assets/car.jpg"
-            },
-            {
-                title: "Toyota Highlander",
-                cost: "$12000",
-                locator: "Indianapolis, IL",
-                imgPath: "./assets/car.jpg"
-            },
-            {
-                title: "Hyundai Elantra",
-                cost: "Free",
-                locator: "Brooklyn, NY",
-                imgPath: "./assets/car.jpg"
-            },
-            {
-                title: "Hyundai Elantra",
-                cost: "Free",
-                locator: "Manhattan, NY",
-                imgPath: "./assets/car.jpg"
-            }
-        ]
 
-        return this.http.put(this.baseUrl + this.mergelistEndpoint, temp)
+    modifyMerchInfo(data: MerchInfo) {
+        
+        return this.http.put(this.baseUrl + this.mergelistEndpoint, data)
     }
 }

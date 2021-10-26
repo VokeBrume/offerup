@@ -11,7 +11,7 @@ import { MerchInfoService } from "./merch-info.service";
     templateUrl: "merch-info.component.html"
 })
 export class MerchInfoComponent implements OnInit {
-    merchList: MerchInfo[] | undefined;
+    merchList: MerchInfo | undefined;
     merchcards: Merch[] = [];
 
     constructor(private merchInfoService: MerchInfoService) {
@@ -20,18 +20,14 @@ export class MerchInfoComponent implements OnInit {
     ngOnInit(): void {
         console.log("Registering showMerchInfo as a subscriber");
         this.showMerchInfo();
-        this.merchInfoService.modifyMerchInfo().subscribe(data => {
-            console.log(data);
-        })
     }
 
     showMerchInfo() {
-        this.merchInfoService.getMerchInfo().subscribe((data: MerchInfo[]) => {
+        this.merchInfoService.getMerchInfo().subscribe((data: MerchInfo) => {
             console.log(data);
             this.merchList = data;
             for (var item in data) {
-                this.merchcards.push(new Merch(data[item]))
-                console.log(data[item]);
+                this.merchcards.push(new Merch(data))
             }
         })
     }

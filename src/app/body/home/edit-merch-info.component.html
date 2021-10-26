@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form #postForm = "ngForm" (ngSubmit) = "onModifyMerchInfo(postForm.value)">
+                <div class="input group">
+                    <div class="form-floating mb-1">
+                        <input type="text" class="form-control" id="title" ngModel name = "title">
+                        <label for="floatingInput">Title</label>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input type="text" class="form-control" id="cost" ngModel name = "cost">
+                        <label for="floatingInput">Cost($)</label>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input type="text" class="form-control" id="locator" ngModel name = "locator">
+                        <label for="floatingInput">Location</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="imgPath" ngModel name = "imgPath">
+                        <label for="floatingInput">Image Path</label>
+                    </div>
+                </div>
+                <button class = "btn btn-success" type = "submit">
+                    Update Info
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
