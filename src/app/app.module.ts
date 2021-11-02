@@ -18,6 +18,8 @@ import { UserInfoComponent } from './header/user-info.component';
 import { MerchInfoComponent } from './body/home/merch-info.component';
 import { EditMerchInfoComponent } from './body/home/edit-merch-info.component';
 import { FormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'offerup-app')
   ],
   providers: [],
   bootstrap: [AppComponent]
