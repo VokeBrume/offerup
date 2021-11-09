@@ -17,9 +17,10 @@ export class DatabaseService {
     public showData() {
         this.items.subscribe((data:MerchInfo[]) => {
             console.log("Data received");
-            for (let item of data) {
-                console.log(item);
-            }
+            console.log(data);
+            // for (let item of data) {
+            //     console.log(item);
+            // }
         })
     }
 }

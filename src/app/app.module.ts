@@ -20,6 +20,7 @@ import { EditMerchInfoComponent } from './body/home/edit-merch-info.component';
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     MerchCardComponent,
     UserInfoComponent,
     MerchInfoComponent,
-    EditMerchInfoComponent
+    EditMerchInfoComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
