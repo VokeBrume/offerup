@@ -2,8 +2,8 @@
 ![logo](https://user-images.githubusercontent.com/70508796/152751218-79557089-fb17-45ea-a3bf-795e17f1a2d7.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
-Back end uses firebase
-.
+
+Back end uses firebase.
 
 ## Development server
 
